@@ -11,6 +11,8 @@
 
 ## 冒泡排序
 
+视频：[b站](https://www.bilibili.com/video/BV1du41177iu/)，[Youtube](https://www.youtube.com/watch?v=NW8SV7gWZzQ&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=2)
+
 S-order <--bubble-- S-unorder
 
 像冒泡一样，每次让最小的数**冒出**剩余数据集（无序）“水面”，抵达有序集。
@@ -21,6 +23,8 @@ S-order <--bubble-- S-unorder
 
 ## 选择排序
 
+视频：[b站](https://www.bilibili.com/video/BV1ru4y1X7cs) [Youtube](https://www.youtube.com/watch?v=B_MZlU68rgU&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=4)
+
 S-order <--selection-- S-unorder
 
 从剩余数据集（无序）中**选择**最值，放到有序集中。
@@ -30,6 +34,8 @@ S-order <--selection-- S-unorder
 2. 找到最值往前放
 
 ## 插入排序
+
+视频：[b站](https://www.bilibili.com/video/BV1Gp4y1E7Dh) [Youtube](https://www.youtube.com/watch?v=ivGRfvUvTww&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=3)
 
 S-order <--insertion-- S-unorder
 
@@ -57,6 +63,8 @@ S-order <--insertion-- S-unorder
 
 ## 快速排序
 
+视频：[b站](https://www.bilibili.com/video/BV1mN411i7QT) [Youtube](https://www.youtube.com/watch?v=I5Pb-i5fL44&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=5)
+
 S-left | pivot number | S-right
 
 每次随机找一个值 x（pivot number，枢轴元素），以其为界，在数组原地：
@@ -72,6 +80,7 @@ S-left | pivot number | S-right
 ![](../../img/quick-sort.png)
 
 基于链表的快速排序，思想一致，主要复杂度在链表操作上。
+视频：[b站](https://www.bilibili.com/video/BV1jm4y1T7YE) [Youtube](https://www.youtube.com/watch?v=REF8nBlBM7I&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=6)
 
 一些保持代码简洁的小技巧：
 1. 使用栈上的空白头结点，避免是否为空的边界判断。
@@ -85,6 +94,8 @@ S-left | pivot number | S-right
 2. 可以在拼接的时候使用 dummy 头结点，就可以避免对 smaller 空链表的判断。
 
 ## 归并排序
+
+视频：[b站](https://www.bilibili.com/video/BV1194y1s75T) [Youtube](https://www.youtube.com/watch?v=mWlsMiwDfyM&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=7)
 
 S-half-left | S-half-right
 
@@ -103,6 +114,8 @@ S-half-left | S-half-right
 
 基于链表的归并算法，思想和数组归并类似，主要难点在于拆分的时候边角情况的处理。很容易非法访问和爆栈（stack overflow）。
 
+视频：[b站](https://www.bilibili.com/video/BV18z4y157LT) [Youtube](https://www.youtube.com/watch?v=n4vGM1h245k&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=8)
+
 可以有两种拆分的方法：
 1. 2 passes：第一遍求长度，利用半长找到分界点。
 2. 1 pass：快慢指针，快指针每次走两步，慢指针每次走一步
@@ -112,6 +125,8 @@ S-half-left | S-half-right
 ![](../../img/merge-sort-linked-list.png)
 
 ## 堆排序
+
+视频：[b站](https://www.bilibili.com/video/BV1DV411w7pi) [Youtube](https://www.youtube.com/watch?v=pMvOP9Pq-Sc&list=PLSISRu2b2N55Htp_3tUQoqMPP4EsTLGxv&index=9)
 
 关键是实现一个“堆化”（heapify）函数。
 该函数的工作是：在一个除了根元素其他元素都符合堆的性质的情况下，自根向叶的调整，使之完全符合堆的性质。
