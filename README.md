@@ -6,8 +6,6 @@ Interview data structures and algorithms for infra programmers.
 欢迎大家在 issue 里补充你遇到的有趣的题目，然后我增加题解放到仓库里。当然，如果你直接提 PR 更好。
 
 ![](img/3-basic-sort.png)
-![](img/merge-sort.png)
-![](img/quick-sort-linked-list.png)
 
 
 # video （视频讲解）
